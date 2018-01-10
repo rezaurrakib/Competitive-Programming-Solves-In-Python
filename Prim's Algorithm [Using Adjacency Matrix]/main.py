@@ -11,7 +11,7 @@ import math
 class PrimsAlgo:
     
     def __init__(self):
-        self.file = open("output.txt", "w")
+        #self.file = open("output.txt", "w")
         self.INFINITY = 100000000
         self.get_input()
     
@@ -105,11 +105,11 @@ class PrimsAlgo:
                 self.existing_eddge_list[(u-1,v-1)] = True
                 self.existing_eddge_list[(v-1,u-1)] = True
                 
-            for key, value in self.graph:
-                 self.file.write('%s %s'.format(key, value))
+            #for key, value in self.graph:
+            #     self.file.write('%s %s'.format(key, value))
             #print(self.coordinates)
             #print(self.graph)
-            #self.prims_algorithm(num_buildings)
+            self.prims_algorithm(num_buildings)
         
 if __name__ == '__main__':
     obj = PrimsAlgo()
