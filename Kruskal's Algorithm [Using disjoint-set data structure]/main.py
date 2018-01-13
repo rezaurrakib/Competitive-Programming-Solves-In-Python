@@ -28,7 +28,6 @@ class KruskalAlgo:
         def __getitem__(self, index): 
             return self.weight # Always sort against the weight attribute
 
-
     def reset(self, nodes):
         self.graph = [] # value will be the list of edges
         self.min_spanning_tree_set = []
